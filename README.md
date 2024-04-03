@@ -11,7 +11,9 @@
 ### Tips for gaining access:
 + If there is a common well-known webApp, test for default credentials
 
-
+### Tips for privilege escalation:
++ Find SUID: find / -perm -u=s -type f 2>/dev/null
++ Find executables runnable as Sudo by current User: sudo -l
 
 ### Useful links while pentesting:
 + [Payloads for Common Vulnerabilities](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master).
