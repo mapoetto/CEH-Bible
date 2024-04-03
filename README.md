@@ -3,9 +3,10 @@
 
 
 ### Tips for scanning/enumeration:
-+ namp -sV HOST Explaination: -sV: Probe open ports to determine service/version info
-+ nmap -sCV HOST Explaination: -sC: equivalent to --script=default
-+ nmap -sV -script=vulners.nse HOST Explaination: search for vulnerabilities
++ namp -sV HOST |Explaination: -sV: Probe open ports to determine service/version info
++ nmap -sCV HOST |Explaination: -sC: equivalent to --script=default
++ nmap -sV -script=vulners.nse HOST |Explaination: search for vulnerabilities
++ nmap -p- --min-rate=1000 -sVC -Pn -T4 HOST |Explaination: scan for all ports, with a min Packet ratio to send (to speed up), with an aggressive time (T4)
 + Always look for response headers
 + Scan for .txt files
 + Identify what language/framework is used in the webApp. Use appropriate wordlist.
