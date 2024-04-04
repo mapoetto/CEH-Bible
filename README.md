@@ -20,6 +20,9 @@
 + Find executables runnable as Sudo by current User: sudo -l
   If there are any, check for their version and their CVE/exploits 
 
+### Tips for windows:
++ evil-winrm is a program to interact with RPC windows and other protocols
+
 ### Useful links while pentesting:
 + [Payloads for Common Vulnerabilities](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master).
 + [Wordlists](https://github.com/danielmiessler/SecLists)
