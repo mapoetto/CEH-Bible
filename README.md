@@ -9,6 +9,9 @@
 + nmap -p- --min-rate=1000 -sV -sC -T4 HOST |Explaination: scan for all ports, with a min Packet ratio to send (to speed up), with an aggressive time (T4)
 + Always look for response headers
 + Enumerate subdomains (you can use gobuster)
++ If there is a DNS server, use it to search for domains. You can use DIG:
+    +  DNS Reverse: dig @DNS_SERVER_IP -x IP_TO_REVERSE
+    +  TRANSFER ZONE CHECK (you can guess a domain to check if it exists): dig axfr @DNS_SERVER_IP guesseddomain
 + Scan for .txt files
 + Identify what language/framework is used in the webApp. Use appropriate wordlist.
 + Using DIRB you can specify file extensions: "-X .php"
