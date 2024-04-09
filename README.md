@@ -15,6 +15,7 @@
 + Scan for .txt files
 + Identify what language/framework is used in the webApp. Use appropriate wordlist.
 + Using DIRB you can specify file extensions: "-X .php"
++ If you found an LFI or an Arbitrary File Read Vulnerability, you could read file: "../../../../../proc/self/environ" (same level of /etc/passwd) to read Enviroment Variables of the current process (there could be some sensitive information exposure)
 
 ### Tips for gaining access:
 + If there is a common well-known webApp, test for default credentials
