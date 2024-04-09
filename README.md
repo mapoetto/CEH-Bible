@@ -8,6 +8,7 @@
 + nmap -sV -script=vulners.nse HOST |Explaination: search for vulnerabilities
 + nmap -p- --min-rate=1000 -sV -sC -T4 HOST |Explaination: scan for all ports, with a min Packet ratio to send (to speed up), with an aggressive time (T4)
 + Always look for response headers
++ Enumerate subdomains (you can use gobuster)
 + Scan for .txt files
 + Identify what language/framework is used in the webApp. Use appropriate wordlist.
 + Using DIRB you can specify file extensions: "-X .php"
