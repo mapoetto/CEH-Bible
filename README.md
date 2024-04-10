@@ -18,8 +18,9 @@
 + If you found an LFI or an Arbitrary File Read Vulnerability, you could read file: "../../../../../proc/self/environ" (same level of /etc/passwd) to read Enviroment Variables of the current process (there could be some sensitive information exposure)
 + Look for XSS, they could be used to reveal sensitive information by Server side
 
-### Tips for injection:
+### Tips for injection/fuzzing:
 + Changing the order of parameters could lead to a restriction bypass
++ Encode your payload
 
 ### Tips for gaining access:
 + If there is a common well-known webApp, test for default credentials
