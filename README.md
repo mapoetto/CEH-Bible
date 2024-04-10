@@ -7,6 +7,7 @@
 + nmap -sCV HOST |Explaination: -sC: equivalent to --script=default
 + nmap -sV -script=vulners.nse HOST |Explaination: search for vulnerabilities
 + nmap -p- --min-rate=1000 -sV -sC -T4 HOST |Explaination: scan for all ports, with a min Packet ratio to send (to speed up), with an aggressive time (T4)
++ sudo nmap -sU -sV -sC IP |Explaination: perform an UDP scan, requires more time.
 + Always look for response headers
 + Enumerate subdomains (you can use gobuster)
 + If there is a DNS server, use it to search for domains. You can use DIG:
