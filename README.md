@@ -28,7 +28,12 @@
 ### Tips for privilege escalation:
 + Find SUID: find / -perm -u=s -type f 2>/dev/null
 + Find executables runnable as Sudo by current User: sudo -l
-  If there are any, check for their version and their CVE/exploits 
+  If there are any, check for their version and their CVE/exploits
++ Look for sensitive informations:
+    + Search Files owned by the user: find / -uid UID -type f -ls 2>/dev/null | grep -v "/proc*"
+    + Search Files with the name of the user in it: find / -name "*USER*" -type f -ls 2>/dev/null
+    + Search Files with the word password in the home directory: grep -i password -R . 
+
 
 ### Tips for windows:
 + evil-winrm is a program to interact with RPC windows and other protocols
