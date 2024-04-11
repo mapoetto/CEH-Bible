@@ -33,7 +33,8 @@
 + Look for sensitive informations:
     + Search Files owned by the user: find / -uid UID -type f -ls 2>/dev/null | grep -v "/proc*"
     + Search Files with the name of the user in it: find / -name "*USER*" -type f -ls 2>/dev/null
-    + Search Files with the word password in the home directory: grep -i password -R . 
+    + Search Files with the word password in the home directory: grep -i password -R .
++ Look for process execution. Probably there could be some process running as root, and they could be exploitable: ps -ef --forest
 
 
 ### Tips for windows:
