@@ -47,7 +47,8 @@
 + [Hash Identifier](https://hashes.com/en/tools/hash_identifier)
 + [Automated Privilege Escalation](https://github.com/carlospolop/PEASS-ng)
 + [Single PHP shell file](https://github.com/flozz/p0wny-shell)
-
++ [Reverse Shell Generator](https://www.revshells.com/)
+  
 ### Useful links for learning:
 + [List of vulnerable Web App](https://www.theprohack.com/p/web-hacking-practice-list-of-vulnerable.html)
 + [IppSec Channel](https://www.youtube.com/@ippsec/featured)
