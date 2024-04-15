@@ -36,9 +36,11 @@
     + Search Files with the word password in the home directory: grep -i password -R .
 + Look for process execution. Probably there could be some process running as root, and they could be exploitable: ps -ef --forest
 
-
 ### Tips for windows:
 + evil-winrm is a program to interact with RPC windows and other protocols
+
+### Tips for Android
++ [PhoneSploit](https://github.com/AzeemIdrisi/PhoneSploit-Pro)
 
 ### Useful links while pentesting:
 + [Payloads for Common Vulnerabilities](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master).
