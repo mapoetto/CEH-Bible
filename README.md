@@ -56,3 +56,4 @@
 ### Useful links for learning:
 + [List of vulnerable Web App](https://www.theprohack.com/p/web-hacking-practice-list-of-vulnerable.html)
 + [IppSec Channel](https://www.youtube.com/@ippsec/featured)
++ [CEH Master Guide](https://github.com/CyberSecurityUP/Guide-CEH-Practical-Master)
