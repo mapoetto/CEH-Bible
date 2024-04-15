@@ -48,6 +48,7 @@
 + [Automated Privilege Escalation](https://github.com/carlospolop/PEASS-ng)
 + [Single PHP shell file](https://github.com/flozz/p0wny-shell)
 + [Reverse Shell Generator](https://www.revshells.com/)
++ [Useful Commands](https://github.com/xaferima/Certified-Ethical-Hacking-Practical-Tools/blob/main/Commands-4-tools-used)
   
 ### Useful links for learning:
 + [List of vulnerable Web App](https://www.theprohack.com/p/web-hacking-practice-list-of-vulnerable.html)
