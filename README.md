@@ -19,6 +19,39 @@
 + If you found an LFI or an Arbitrary File Read Vulnerability, you could read file: "../../../../../proc/self/environ" (same level of /etc/passwd) to read Enviroment Variables of the current process (there could be some sensitive information exposure)
 + Look for XSS, they could be used to reveal sensitive information by Server side
 
+### Tips for 401-403 Error Bypass
+[Full article](https://blog.vidocsecurity.com/blog/401-and-403-bypass-how-to-do-it-right/)
++ Change HTTP Method:
+  + GET
+  + HEAD
+  + POST
+  + PUT
+  + DELETE
+  + CONNECT
+  + OPTIONS
+  + TRACE
+  + PATCH
+  + FOO # non existant method also might work
++ User-Agent fuzzing
++ HTTP Headers fuzzing
++ Path Fuzzing and creative string literals.
+  + /../
+  + /...
+  + /..%00
+  + /..%01
+  + /..%0a
+  + /..%0d
+  + /..%09
+  + /~root
+  + /~admin
+  + /%20/
+  + /%2e%2e/
+  + /%252e%252e/
+  + /%c0%af/
+  + /%e0%80%af
++ Downgrade the protocol version.
++ HTTP request smuggling  
+    
 ### Tips for injection/fuzzing:
 + Changing the order of parameters could lead to a restriction bypass
 + Encode your payload
