@@ -14,6 +14,8 @@
     +  DNS Reverse: dig @DNS_SERVER_IP -x IP_TO_REVERSE
     +  TRANSFER ZONE CHECK (you can guess a domain to check if it exists): dig axfr @DNS_SERVER_IP guesseddomain
 + Scan for .txt files
++ Don't forget to scan every dir you found
++ Don't forget to scan every API endpoint you found. Use different HTTP Methods too.
 + Identify what language/framework is used in the webApp. Use appropriate wordlist.
 + Using DIRB you can specify file extensions: "-X .php"
 + If you found an LFI or an Arbitrary File Read Vulnerability, you could read file: "../../../../../proc/self/environ" (same level of /etc/passwd) to read Enviroment Variables of the current process (there could be some sensitive information exposure)
@@ -51,7 +53,12 @@
   + /%e0%80%af
 + Downgrade the protocol version.
 + HTTP request smuggling  
-    
+
+### Tips for API Testing:
++ Use different HTTP Methods
++ Even if API is REST (Content-Type: application/json), it could accept non-JSON payloads (Content-Type: application/x-www-form-urlencoded)
++ https://jwt.io/  Will help to craft and analyze tokens
+
 ### Tips for injection/fuzzing:
 + Changing the order of parameters could lead to a restriction bypass
 + Encode your payload
