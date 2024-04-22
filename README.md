@@ -70,6 +70,7 @@
 + Find SUID: find / -perm -u=s -type f 2>/dev/null
 + Find executables runnable as Sudo by current User: sudo -l
   If there are any, check for their version and their CVE/exploits
+  If they use relative paths, $PATH could be modified in order to execute a new file created by us.
 + Look for sensitive informations:
     + Search Files owned by the user: find / -uid UID -type f -ls 2>/dev/null | grep -v "/proc*"
     + Search Files with the name of the user in it: find / -name "*USER*" -type f -ls 2>/dev/null
