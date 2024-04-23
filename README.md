@@ -62,6 +62,8 @@
 ### Tips for injection/fuzzing:
 + Changing the order of parameters could lead to a restriction bypass
 + Encode your payload
++ A form could handle dirrent type of requests. Try: Content-Type: application/json , Content-Type: application/x-www-form-urlencoded
++ Don't try only SQL injection, Try also NoSQL
 
 ### Tips for gaining access:
 + If there is a common well-known webApp, test for default credentials
