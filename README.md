@@ -21,6 +21,14 @@
 + If you found an LFI or an Arbitrary File Read Vulnerability, you could read file: "../../../../../proc/self/environ" (same level of /etc/passwd) to read Enviroment Variables of the current process (there could be some sensitive information exposure)
 + Look for XSS, they could be used to reveal sensitive information by Server side
 
+### Tips for Arbitrary File Read
++ Search for Vulnerable library used
++ Search for any unsecure deserialization
++ NodeJS:
+ + index.js
+ + server.js
+ + main.js 
+
 ### Tips for 401-403 Error Bypass
 [Full article](https://blog.vidocsecurity.com/blog/401-and-403-bypass-how-to-do-it-right/)
 + Change HTTP Method:
