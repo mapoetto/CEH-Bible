@@ -93,8 +93,8 @@
 ### Tips for Android
 + [PhoneSploit](https://github.com/AzeemIdrisi/PhoneSploit-Pro)
 
-### Useful CMDs
-## FTP Anonymous login + dump ALL
+## Useful CMDs
+### FTP Anonymous login + dump ALL
 + wget -m ftp://anonymous:anonymous@10.10.10.98 #Donwload all
 + wget -m --no-passive ftp://anonymous:anonymous@10.10.10.98 #Download all
 
