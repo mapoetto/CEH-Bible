@@ -98,6 +98,10 @@
 + wget -m ftp://anonymous:anonymous@10.10.10.98 #Donwload all
 + wget -m --no-passive ftp://anonymous:anonymous@10.10.10.98 #Download all
 
+### SMB
+Use crackmapexec to check if any of these passwords work for any of the users for smb:
++ crackmapexec smb 10.10.10.184 -u users -p passwords
+
 ### Useful links while pentesting:
 + [Payloads for Common Vulnerabilities](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master).
 + [Wordlists](https://github.com/danielmiessler/SecLists)
