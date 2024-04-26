@@ -75,6 +75,8 @@
 
 ### Tips for gaining access:
 + If there is a common well-known webApp, test for default credentials
++ An API endpoint, could still evaluate a JSON body even if HTTP Method is GET.
++ PHP: Type juggling: {"password":true} this payload could bypass a login form
 
 ### Tips for privilege escalation:
 + Find SUID: find / -perm -u=s -type f 2>/dev/null
