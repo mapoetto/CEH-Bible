@@ -89,6 +89,7 @@
     + Search Files with the word password in the home directory: grep -i password -R .
 + Look for process execution. Probably there could be some process running as root, and they could be exploitable: ps -ef --forest
 + If you have to pass a file you can expose an http server with:python3 -m http.server and use wget on target machine
++ Look for crontab
 
 ### Tips for windows:
 + evil-winrm is a program to interact with RPC windows and other protocols
