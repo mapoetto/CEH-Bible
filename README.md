@@ -105,6 +105,7 @@
 ### SMB
 Use crackmapexec to check if any of these passwords work for any of the users for smb:
 + crackmapexec smb 10.10.10.184 -u users -p passwords
++ If you can upload files to a smb share (or the application could do it), attack with: "smb share upload file attack" scf files.
 
 ### Useful links while pentesting:
 + [Payloads for Common Vulnerabilities](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master).
